@@ -1,0 +1,47 @@
+<div class="mat-dialog-container">
+
+  <h1 mat-dialog-title>Editar Item</h1>
+  <div mat-dialog-content>
+    <form #editForm="ngForm">
+      <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 15px;">
+        <mat-label>Autor</mat-label>
+        <input
+          matInput
+          [(ngModel)]="data.autor"
+          name="autor"
+          #autor="ngModel"
+          required
+          placeholder="Digite o autor"/>
+        <mat-error *ngIf="autor.invalid && autor.touched">Autor é obrigatório.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 15px;">
+        <mat-label>Música</mat-label>
+        <input
+          matInput
+          [(ngModel)]="data.music"
+          name="music"
+          #music="ngModel"
+          required
+          placeholder="Digite o nome da música"/>
+        <mat-error *ngIf="music.invalid && music.touched">Música é obrigatória.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 15px;">
+        <mat-label>Na versão de outro cantor(a)?</mat-label>
+        <input
+          matInput
+          [(ngModel)]="data.versao"
+          name="versao"
+          #versao="ngModel"
+          required
+          placeholder="Digite a versão"/>
+        <mat-error *ngIf="versao.invalid && versao.touched">Versão é obrigatória.</mat-error>
+      </mat-form-field>
+    </form>
+  </div>
+  <div mat-dialog-actions align="center">
+    <button mat-button class="save-btn" [ngClass]="{'disabled-btn': editForm.invalid}" [disabled]="editForm.invalid" (click)="onSave()">Salvar</button>
+    <button mat-button class="cancel-btn" mat-dialog-close>Cancelar</button>
+  </div>
+</div>
