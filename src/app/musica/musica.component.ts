@@ -71,15 +71,20 @@ export class MusicaComponent {
       return;
     }
 
-    this.musicaService.addMusic(this.musica).subscribe(
-      () => {
-        this.getMusics();
+     // Criar um novo objeto sem o campo uuid
+  const { uuid, ...musicaSemUuid } = this.musica;
+
+  this.musicaService.addMusic(musicaSemUuid).subscribe(
+    (savedMusic) => {
+      this.musicas.push(savedMusic);
+      this.getMusics();
         this.limparCampos();
         this.showNotification('Música adicionada com sucesso!', 'success');
       },
       () => this.showNotification('Erro ao adicionar música.', 'error')
     );
   }
+
 
 
   /**
