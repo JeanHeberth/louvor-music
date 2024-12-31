@@ -1,0 +1,18 @@
+/* Rodapé */
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  height: 60px;
+  position: fixed; /* Mantém o rodapé fixo no final da página */
+  bottom: 0; /* Alinhado ao fundo */
+  left: 0;
+  width: 100%; /* Estende o rodapé por toda a largura */
+  z-index: 1000; /* Garante que o rodapé fique acima de outros elementos */
+}
+
+.text-muted {
+  margin-top: 20px;
+  color: white !important;
+}

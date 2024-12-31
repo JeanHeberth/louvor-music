@@ -1,0 +1,34 @@
+/* Sidebar fixa */
+.layout-sidebar {
+  position: fixed;
+  left: 0;
+  top: 80px; /* Alinhado ao cabeçalho */
+  width: 200px; /* Largura fixa */
+  height: calc(100vh - 80px); /* Altura total menos o cabeçalho */
+  background-color: #f4f4f4; /* Cor de fundo */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Para alinhar os itens */
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  overflow-y: auto; /* Rolagem independente, caso necessário */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
