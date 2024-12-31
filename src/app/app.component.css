@@ -1,0 +1,35 @@
+/* Configuração do layout geral */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o layout ocupe toda a altura da viewport */
+}
+
+
+/* Área principal abaixo do cabeçalho */
+.main {
+  display: flex;
+  flex: 1;
+  margin-top: 30px; /* Espaço para o cabeçalho fixo */
+  flex-direction: column;
+}
+
+/* Área de conteúdo principal */
+.content {
+  margin-left: 200px; /* Espaço para a sidebar fixa */
+  padding: 20px;
+  background-color: #ffffff; /* Fundo branco */
+  min-height: calc(100vh - 140px); /* Altura total menos cabeçalho */
+  overflow-y: auto; /* Habilitar rolagem no conteúdo */
+  margin-bottom: 30px;
+}
+
+
