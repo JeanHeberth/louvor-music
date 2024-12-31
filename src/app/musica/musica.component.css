@@ -1,0 +1,48 @@
+.btn-adicionar-musica {
+  background-color: #808080; /* Gray */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* Tabela de músicas */
+.table-container {
+  background-color: #343a40; /* Cor do fundo consistente com o rodapé e topo */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  margin-top: 20px; /* Espaçamento do conteúdo acima */
+}
+
+/*.table-music {*/
+/*  width: 100%; !* Garantir que a tabela use toda a largura disponível *!*/
+/*  background-color: #ffffff; !* Fundo branco para as células *!*/
+/*  border-collapse: separate; !* Para evitar sobreposição de bordas *!*/
+/*}*/
+
+.table-header th {
+  background-color: #343a40; /* Fundo escuro para o cabeçalho */
+  color: white; /* Cor do texto no cabeçalho */
+  text-align: center; /* Centralizar texto */
+  padding: 12px; /* Espaçamento interno */
+  font-size: 14px;
+}
+
+.table-music tbody tr:hover {
+  background-color: #f5f5f5; /* Cor de fundo ao passar o mouse */
+}
+
+.table-music td {
+  text-align: center; /* Centralizar texto nas células */
+  padding: 12px;
+}
+
