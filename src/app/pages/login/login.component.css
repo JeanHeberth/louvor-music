@@ -1,0 +1,34 @@
+.btn-login {
+  background-color: #808080; /* Gray */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.btn-login:hover {
+  background-color: #696969; /* Gray mais escuro ao passar o mouse */
+}
+.link-registre{
+  text-decoration: none;
+  color: #808080;
+}
+.link-registre:hover{
+  color: #696969;
+}
+
+.link-esquci-senha{
+  text-decoration: none;
+  color: #808080;
+}
+
+.link-esquci-senha:hover{
+  color: #696969;
+}
