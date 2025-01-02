@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { MusicaInterface } from '../musica/musica.component';
+import { MusicaInterface } from '../pages/musica/musica.component';
 
 @Injectable({
   providedIn: 'root',

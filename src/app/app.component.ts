@@ -1,9 +1,11 @@
 import {Component} from '@angular/core';
-import {MusicaComponent} from './musica/musica.component';
-import {RouterOutlet} from '@angular/router';
+import {MusicaComponent} from './pages/musica/musica.component';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {NavbarComponent} from './template/navbar/navbar.component';
 import {FooterComponent} from './template/footer/footer.component';
 import {SidebarComponent} from './template/sidebar/sidebar.component';
+import {HomeComponent} from './pages/home/home.component';
+import {CommandModule} from '@angular/cli/src/command-builder/command-module';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +14,6 @@ import {SidebarComponent} from './template/sidebar/sidebar.component';
     FooterComponent,
     SidebarComponent,
     RouterOutlet,
-    MusicaComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { MusicaService } from '../service/musica.service';
+import { MusicaService } from '../../service/musica.service';
 import { MatDialog } from '@angular/material/dialog';
 import { MusicEditPopupComponent } from '../music-edit-popup/music-edit-popup.component';
 import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
 import {FormsModule} from '@angular/forms';
-import {NotificationComponent} from '../notification/notification.component';
-import {FilterMusicaPipe} from '../pipe/filter-musica.pipe';
+import {NotificationComponent} from '../../notification/notification.component';
+import {FilterMusicaPipe} from '../../pipe/filter-musica.pipe';
 import {NgForOf, NgIf} from '@angular/common';
 
 export interface MusicaInterface {
