@@ -1,0 +1,68 @@
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log
+yarn.lock
+yarn-error.log
+
+# Angular
+dist/
+out-tsc/
+.angular/
+.angular-cache/
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Logs e relatórios
+*.log
+*.error
+*.trace
+
+# Testes
+coverage/
+test-results/
+.jasmine/
+.nyc_output/
+
+# Ambiente
+.env
+.env.*.local
+
+# Arquivos Temporários
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.bak
+*.old
+
+# Angular CLI
+.angular-cli.json
+.angular.json
+
+# Ferramentas de Construção
+.eslintcache
+.husky/
+
+# Configurações de Dependências
+package-lock.json
+yarn.lock
+
+# Configurações do Cypress
+cypress/screenshots/
+cypress/videos/
+
+# Outros
+.sass-cache/
+logs/
+*.log
+*.gz
