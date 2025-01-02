@@ -13,6 +13,9 @@
   margin-top: 20px;
   margin-bottom: 50px;
 }
+.btn-adicionar-musica:hover {
+  background-color: #696969; /* Gray mais escuro ao passar o mouse */
+}
 
 /* Tabela de músicas */
 .table-container {
@@ -22,12 +25,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
   margin-top: 20px; /* Espaçamento do conteúdo acima */
 }
-
-/*.table-music {*/
-/*  width: 100%; !* Garantir que a tabela use toda a largura disponível *!*/
-/*  background-color: #ffffff; !* Fundo branco para as células *!*/
-/*  border-collapse: separate; !* Para evitar sobreposição de bordas *!*/
-/*}*/
 
 .table-header th {
   background-color: #343a40; /* Fundo escuro para o cabeçalho */
