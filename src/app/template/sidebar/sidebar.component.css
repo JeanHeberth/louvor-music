@@ -12,9 +12,19 @@
   z-index: 1000;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
   overflow-y: auto; /* Rolagem independente, caso necessário */
+  transition: transform 0.3s ease; /* Transição suave */
+}
+.nav-rotas a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 1px 0;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-ul {
+  ul {
   list-style: none;
   padding: 0;
   margin: 0;

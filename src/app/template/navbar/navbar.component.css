@@ -1,4 +1,4 @@
-.layout-sidebar {
+.layout-navbar {
   position: fixed;
   top: 0px;
   left: 0;
@@ -14,20 +14,24 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adicionando uma leve sombra para destacar */
 }
 
-.text-topo {
+.nav-barra-text-topo {
   font-size: 24px;
   font-weight: bold;
 }
 
-.nav-links {
+.nav-barra-top {
   display: flex;
   gap: 1.5rem; /* Espaço entre os links */
 }
 
-.nav-links a {
-  color: white;
+.nav-barra-top a {
   text-decoration: none;
-  font-size: 18px;
+  color: white;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 1px 0;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .nav-links a:hover {
