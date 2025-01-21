@@ -1,28 +1,14 @@
 import {Component} from '@angular/core';
-import {MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardTitle} from '@angular/material/card';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatError, MatFormField, MatLabel} from '@angular/material/form-field';
-import {NgIf} from '@angular/common';
-import {MatInput} from '@angular/material/input';
-import {FaIconLibrary, FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import {faArrowRight, faCheckSquare} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-login',
   imports: [
-    MatCard,
-    MatCardTitle,
-    MatCardContent,
     ReactiveFormsModule,
     FontAwesomeModule,
-    MatFormField,
-    MatCardHeader,
-    FormsModule,
-    MatLabel,
-    MatError,
-    NgIf,
-    MatInput,
-    MatCardActions
+    FormsModule
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
